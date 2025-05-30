@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEDDING INVITATION</title>
+  <link rel="stylesheet" href="../assets/styles/weddingpage.css">
+</head>
+<style>
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+  body img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 800px;
+  height: 350px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+h2 {
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  flex: 1;
+  text-align: left;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.radio-group {
+  text-align: left;
+  margin: 15px 0;
+}
+
+.radio-group p {
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.radio-group label {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e8b9b9;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d9a6a6;
+}
+</style>
+<body>
+    <img src="../assets/images/weddingpage.png" alt="헤더이미지">
+    <div class="container">
+      <h2>하객 등록</h2>
+      <p class="subtitle">참석 여부와 상세정보를 기입해주세요</p>
+  
+      <form class="guest-form">
+        <div class="input-group">
+          <div class="input-box">
+            <label for="name">이름*</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="input-box">
+            <label for="contact">연락처*</label>
+            <input type="text" id="contact" required>
+          </div>
+        </div>
+  
+        <div class="radio-group">
+          <p>참석 측*</p>
+          <label><input type="radio" name="side" required> 신부측</label>
+          <label><input type="radio" name="side"> 신랑측</label>
+        </div>
+  
+        <div class="radio-group">
+          <p>참석 여부*</p>
+          <label><input type="radio" name="attendance" required> 참석</label>
+          <label><input type="radio" name="attendance"> 불참석</label>
+          <label><input type="radio" name="attendance"> 보류</label>
+        </div>
+  
+        <button type="submit">하객 등록</button>
+      </form>
+    </div>
+</body>
+</html>
